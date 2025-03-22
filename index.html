@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatto Studio - Diseño Arquitectónico y de Interiores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'adatto-navy': '#0A3141',
+                        'adatto-yellow': '#F4B942',
+                    },
+                    fontFamily: {
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-12 h-12 bg-adatto-navy rounded-full flex items-center justify-center">
+                        <span class="text-white text-2xl font-light">TT</span>
+                    </div>
+                    <div class="text-adatto-navy">
+                        <div class="text-xl">ADATTO</div>
+                        <div class="text-sm font-light">STUDIO</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-adatto-navy hover:text-adatto-yellow transition-colors">Inicio</a>
+                    <a href="#servicios" class="text-adatto-navy hover:text-adatto-yellow transition-colors">Servicios</a>
+                    <a href="#proyectos" class="text-adatto-navy hover:text-adatto-yellow transition-colors">Proyectos</a>
+                    <a href="#contacto" class="text-adatto-navy hover:text-adatto-yellow transition-colors">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24 pb-12 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-light text-adatto-navy">
+                        Tu espacio,<br>tu identidad.
+                    </h1>
+                    <p class="text-xl text-gray-600">
+                        Eleva tu estilo de vida con diseños arquitectónicos y de interiores que reflejan tu esencia.
+                    </p>
+                    <a href="#contacto" class="inline-block bg-adatto-navy text-white px-8 py-3 rounded hover:bg-adatto-yellow transition-colors">
+                        Contáctanos
+                    </a>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000" alt="Interior Design" class="w-full h-[500px] object-cover rounded-lg shadow-xl">
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-adatto-yellow rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-light text-adatto-navy text-center mb-12">Nuestros Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                    <i class="fas fa-home text-4xl text-adatto-yellow mb-4"></i>
+                    <h3 class="text-xl text-adatto-navy mb-4">Diseño de Interiores</h3>
+                    <p class="text-gray-600">Creamos espacios únicos que reflejan tu personalidad y estilo de vida.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                    <i class="fas fa-hard-hat text-4xl text-adatto-yellow mb-4"></i>
+                    <h3 class="text-xl text-adatto-navy mb-4">Obra Civil</h3>
+                    <p class="text-gray-600">Ejecutamos proyectos arquitectónicos con precisión y calidad.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                    <i class="fas fa-hammer text-4xl text-adatto-yellow mb-4"></i>
+                    <h3 class="text-xl text-adatto-navy mb-4">Carpintería</h3>
+                    <p class="text-gray-600">Diseñamos y fabricamos muebles a medida para tu espacio.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                    <i class="fas fa-paint-roller text-4xl text-adatto-yellow mb-4"></i>
+                    <h3 class="text-xl text-adatto-navy mb-4">Remodelaciones</h3>
+                    <p class="text-gray-600">Transformamos espacios existentes en ambientes modernos y funcionales.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                    <i class="fas fa-couch text-4xl text-adatto-yellow mb-4"></i>
+                    <h3 class="text-xl text-adatto-navy mb-4">Interiorismo</h3>
+                    <p class="text-gray-600">Creamos ambientes armoniosos que combinan estética y funcionalidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-light text-adatto-navy text-center mb-12">Proyectos Destacados</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1200" alt="Project 1" class="w-full h-[300px] object-cover transition-transform group-hover:scale-110">
+                    <div class="absolute inset-0 bg-adatto-navy/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white text-lg">Diseño Residencial</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200" alt="Project 2" class="w-full h-[300px] object-cover transition-transform group-hover:scale-110">
+                    <div class="absolute inset-0 bg-adatto-navy/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white text-lg">Diseño Comercial</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200" alt="Project 3" class="w-full h-[300px] object-cover transition-transform group-hover:scale-110">
+                    <div class="absolute inset-0 bg-adatto-navy/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white text-lg">Remodelación</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-adatto-navy text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-light mb-8">Contacto</h2>
+                    <div class="space-y-4">
+                        <p class="flex items-center">
+                            <i class="fas fa-phone mr-4"></i>
+                            +57 322 382 64 27
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-globe mr-4"></i>
+                            adattostudio.com
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fab fa-instagram mr-4"></i>
+                            @adattostudio
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <form class="space-y-4">
+                        <div class="relative">
+                            <input type="text" placeholder="Nombre" class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-adatto-yellow focus:ring-2 focus:ring-adatto-yellow/20 transition-all">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-user text-white/50"></i>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-adatto-yellow focus:ring-2 focus:ring-adatto-yellow/20 transition-all">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-envelope text-white/50"></i>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <textarea placeholder="Mensaje" rows="4" class="w-full px-4 py-3 rounded bg-white/10 border border-white/20 focus:outline-none focus:border-adatto-yellow focus:ring-2 focus:ring-adatto-yellow/20 transition-all"></textarea>
+                            <div class="absolute top-3 left-0 pl-3 pointer-events-none">
+                                <i class="fas fa-message text-white/50"></i>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-adatto-yellow text-adatto-navy px-8 py-3 rounded hover:bg-white transition-colors flex items-center justify-center space-x-2">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div class="absolute -bottom-16 -right-8 w-24 h-24 bg-adatto-yellow rounded-full opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-4">
+                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                    <span class="text-adatto-navy text-xl font-light">TT</span>
+                </div>
+                <div>
+                    <div class="text-lg">ADATTO</div>
+                    <div class="text-xs font-light">STUDIO</div>
+                </div>
+            </div>
+            <p class="text-gray-400">&copy; 2024 Adatto Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
